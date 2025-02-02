@@ -1,16 +1,24 @@
 body {
-    background-color: #0a0a23;
+    background-image: url(images/background/game_background_1.png);
   }
   
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    box-sizing: border-box;
+
+}
   #text {
-    background-color: #0a0a23;
+    background-color: #00674f;
     color: #ffffff;
     padding: 10px;
+    font-size: 17px;
   }
   
-  #game {
-    max-width: 500px;
-    max-height: 400px;
+  #game { 
+    max-width: 1250px;
+    max-height: 1000px;
     background-color: #ffffff;
     color: #ffffff;
     margin: 30px auto 0px;
@@ -20,7 +28,7 @@ body {
   #controls,
   #stats {
     border: 1px solid #0a0a23;
-    padding: 5px;
+    padding: 10px;
     color: #0a0a23;
   }
   
@@ -37,9 +45,25 @@ body {
   }
   
   button {
+    display: none;
     cursor: pointer;
     color: #0a0a23;
     background-color: #feac32;
     background-image: linear-gradient(#fecc4c, #ffac33);
     border: 3px solid #feac32;
+    margin-right: 20px;
+    font-size: 15px;
+  }
+
+  #currentImage{
+    max-width: 500px;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #nextButton{
+    display: none;
+    margin: 5px;
   }
